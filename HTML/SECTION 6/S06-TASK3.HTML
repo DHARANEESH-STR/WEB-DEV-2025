@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>18</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>17</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>Emily Johnson</td>
+            <td>19</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Michael Brown</td>
+            <td>18</td>
+            <td>B+</td>
+        </tr>
+    </table>
+
+</body>
+</html>

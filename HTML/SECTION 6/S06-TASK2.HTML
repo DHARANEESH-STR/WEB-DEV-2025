@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Merged Cells</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Table with Colspan and Rowspan</h2>
+
+    <table>
+        <tr>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Subjects</th>
+            <th rowspan="2">Grade</th>
+        </tr>
+        <tr>
+            <th>Math</th>
+            <th>Science</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>85</td>
+            <td>90</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td colspan="2">92 (Excellent)</td>
+            <td>A+</td>
+        </tr>
+        <tr>
+            <td>Emily Johnson</td>
+            <td>78</td>
+            <td>88</td>
+            <td>B+</td>
+        </tr>
+    </table>
+
+</body>
+</html>
